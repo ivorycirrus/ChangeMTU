@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="Change MTU" Height="450" Width="800">
     <Grid>
-        
+        <ComboBox Name="list_eth" HorizontalAlignment="Left" Margin="26,27,0,0" VerticalAlignment="Top" Width="568"/>
+        <Button Name="btn_refresh" Content="새로고침" HorizontalAlignment="Left" Margin="610,27,0,0" VerticalAlignment="Top" Width="154" Height="22" Click="Btn_refresh_Click"/>
+        <Border Name="border_mtu_status" BorderBrush="Black" BorderThickness="4" HorizontalAlignment="Left" Height="309" Margin="26,71,0,0" VerticalAlignment="Top" Width="738">
+            <StackPanel HorizontalAlignment="Left" Height="289" Margin="9,9,0,0" VerticalAlignment="Top" Width="718" MouseUp="mtu_change_Click">
+                <Label Name="lbl_mtu_status" Content="Default" Margin="10, 30" HorizontalAlignment="Center" FontSize="120"/>
+                <Label Name="lbl_mtu_value" Content="Current MTU : 1500" Margin="10, 0" HorizontalAlignment="Center" FontSize="16" Foreground="Gray"/>
+            </StackPanel>
+        </Border>
+
     </Grid>
 </Window>
