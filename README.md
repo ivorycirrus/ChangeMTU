@@ -12,4 +12,4 @@ Change MTU on ethernet adapter.
 * require Administrator permission
 
 ## License
-Beerware
+[Beerware](https://en.wikipedia.org/wiki/Beerware)
